@@ -1,0 +1,958 @@
+diagnosis_id,admission_id,patient_id,icd10_code,diagnosis_name,severity,is_primary
+DX00001,ADM00001,PAT00002,D50,Iron Deficiency Anaemia,Severe,True
+DX00002,ADM00002,PAT00003,G43,Migraine,Episodic,True
+DX00003,ADM00003,PAT00003,S72,Fracture of Femur,Closed,True
+DX00004,ADM00003,PAT00003,C50,Malignant Neoplasm of Breast,Stage I,False
+DX00005,ADM00003,PAT00003,N18,Chronic Kidney Disease,Stage 1,False
+DX00006,ADM00004,PAT00004,D50,Iron Deficiency Anaemia,,True
+DX00007,ADM00004,PAT00004,G43,Migraine,Chronic,False
+DX00008,ADM00005,PAT00005,C34,Malignant Neoplasm of Lung,Stage I,True
+DX00009,ADM00005,PAT00005,I21,Acute Myocardial Infarction,NSTEMI,False
+DX00010,ADM00006,PAT00006,G43,Migraine,Episodic,True
+DX00011,ADM00006,PAT00006,I21,Acute Myocardial Infarction,NSTEMI,False
+DX00012,ADM00006,PAT00006,N18,Chronic Kidney Disease,Stage 1,False
+DX00013,ADM00007,PAT00007,J18,Pneumonia,Moderate,True
+DX00014,ADM00008,PAT00010,I21,Acute Myocardial Infarction,STEMI,True
+DX00015,ADM00009,PAT00010,I21,Acute Myocardial Infarction,NSTEMI,True
+DX00016,ADM00010,PAT00010,N18,Chronic Kidney Disease,Stage 1,True
+DX00017,ADM00010,PAT00010,J18,Pneumonia,Moderate,False
+DX00018,ADM00011,PAT00011,E11,Type 2 Diabetes Mellitus,Controlled,True
+DX00019,ADM00012,PAT00012,S72,Fracture of Femur,Open,True
+DX00020,ADM00013,PAT00012,C50,Malignant Neoplasm of Breast,Stage III,True
+DX00021,ADM00014,PAT00013,A09,Infectious Gastroenteritis,Moderate,True
+DX00022,ADM00014,PAT00013,I10,Essential Hypertension,Severe,False
+DX00023,ADM00015,PAT00014,I21,Acute Myocardial Infarction,STEMI,True
+DX00024,ADM00015,PAT00014,G43,Migraine,Chronic,False
+DX00025,ADM00016,PAT00016,I10,Essential Hypertension,Moderate,True
+DX00026,ADM00016,PAT00016,I21,Acute Myocardial Infarction,STEMI,False
+DX00027,ADM00017,PAT00017,J18,Pneumonia,Moderate,True
+DX00028,ADM00018,PAT00017,S72,Fracture of Femur,Open,True
+DX00029,ADM00018,PAT00017,C34,Malignant Neoplasm of Lung,Stage II,False
+DX00030,ADM00019,PAT00017,G43,Migraine,Chronic,True
+DX00031,ADM00020,PAT00018,N18,Chronic Kidney Disease,Stage 3,True
+DX00032,ADM00020,PAT00018,J45,Asthma,Severe,False
+DX00033,ADM00021,PAT00019,E11,Type 2 Diabetes Mellitus,Uncontrolled,True
+DX00034,ADM00022,PAT00020,N18,Chronic Kidney Disease,Stage 4,True
+DX00035,ADM00023,PAT00020,E11,Type 2 Diabetes Mellitus,Uncontrolled,True
+DX00036,ADM00023,PAT00020,C34,Malignant Neoplasm of Lung,Stage III,False
+DX00037,ADM00024,PAT00021,I10,Essential Hypertension,Moderate,True
+DX00038,ADM00024,PAT00021,I21,Acute Myocardial Infarction,STEMI,False
+DX00039,ADM00025,PAT00022,I10,Essential Hypertension,Mild,True
+DX00040,ADM00026,PAT00022,S72,Fracture of Femur,Closed,True
+DX00041,ADM00027,PAT00023,A09,Infectious Gastroenteritis,Mild,True
+DX00042,ADM00028,PAT00024,C34,Malignant Neoplasm of Lung,Stage I,True
+DX00043,ADM00028,PAT00024,A09,Infectious Gastroenteritis,Mild,False
+DX00044,ADM00029,PAT00026,C34,Malignant Neoplasm of Lung,Stage I,True
+DX00045,ADM00030,PAT00026,G43,Migraine,Episodic,True
+DX00046,ADM00031,PAT00026,J18,Pneumonia,Mild,True
+DX00047,ADM00031,PAT00026,C50,Malignant Neoplasm of Breast,Stage IV,False
+DX00048,ADM00032,PAT00027,I10,Essential Hypertension,Moderate,True
+DX00049,ADM00032,PAT00027,C34,Malignant Neoplasm of Lung,Stage II,False
+DX00050,ADM00033,PAT00028,S72,Fracture of Femur,Open,True
+DX00051,ADM00033,PAT00028,I21,Acute Myocardial Infarction,STEMI,False
+DX00052,ADM00034,PAT00029,J45,Asthma,Severe,True
+DX00053,ADM00035,PAT00031,N18,Chronic Kidney Disease,Stage 2,True
+DX00054,ADM00036,PAT00034,E11,Type 2 Diabetes Mellitus,Uncontrolled,True
+DX00055,ADM00036,PAT00034,N18,Chronic Kidney Disease,Stage 3,False
+DX00056,ADM00036,PAT00034,J18,Pneumonia,Severe,False
+DX00057,ADM00037,PAT00035,A09,Infectious Gastroenteritis,Moderate,True
+DX00058,ADM00037,PAT00035,I10,Essential Hypertension,Moderate,False
+DX00059,ADM00037,PAT00035,E11,Type 2 Diabetes Mellitus,Uncontrolled,False
+DX00060,ADM00038,PAT00035,I21,Acute Myocardial Infarction,STEMI,True
+DX00061,ADM00039,PAT00036,G43,Migraine,Chronic,True
+DX00062,ADM00040,PAT00038,G43,Migraine,Chronic,True
+DX00063,ADM00041,PAT00039,C34,Malignant Neoplasm of Lung,Stage I,True
+DX00064,ADM00041,PAT00039,S72,Fracture of Femur,Open,False
+DX00065,ADM00041,PAT00039,D50,Iron Deficiency Anaemia,Severe,False
+DX00066,ADM00042,PAT00039,I10,Essential Hypertension,Severe,True
+DX00067,ADM00042,PAT00039,S72,Fracture of Femur,Closed,False
+DX00068,ADM00043,PAT00040,C34,Malignant Neoplasm of Lung,Stage I,True
+DX00069,ADM00044,PAT00040,C34,Malignant Neoplasm of Lung,Stage I,True
+DX00070,ADM00045,PAT00041,I21,Acute Myocardial Infarction,NSTEMI,True
+DX00071,ADM00046,PAT00041,N18,Chronic Kidney Disease,Stage 3,True
+DX00072,ADM00046,PAT00041,E11,Type 2 Diabetes Mellitus,Controlled,False
+DX00073,ADM00047,PAT00042,N18,Chronic Kidney Disease,Stage 3,True
+DX00074,ADM00048,PAT00043,A09,Infectious Gastroenteritis,Mild,True
+DX00075,ADM00048,PAT00043,N18,Chronic Kidney Disease,Stage 1,False
+DX00076,ADM00049,PAT00043,J18,Pneumonia,Moderate,True
+DX00077,ADM00050,PAT00044,E11,Type 2 Diabetes Mellitus,Controlled,True
+DX00078,ADM00050,PAT00044,C50,Malignant Neoplasm of Breast,Stage II,False
+DX00079,ADM00051,PAT00045,D50,Iron Deficiency Anaemia,Mild,True
+DX00080,ADM00052,PAT00046,I10,Essential Hypertension,Mild,True
+DX00081,ADM00053,PAT00048,N18,Chronic Kidney Disease,Stage 1,True
+DX00082,ADM00054,PAT00049,E11,Type 2 Diabetes Mellitus,Uncontrolled,True
+DX00083,ADM00055,PAT00050,S72,Fracture of Femur,Closed,True
+DX00084,ADM00056,PAT00050,I21,Acute Myocardial Infarction,STEMI,True
+DX00085,ADM00056,PAT00050,C34,Malignant Neoplasm of Lung,Stage III,False
+DX00086,ADM00057,PAT00051,D50,Iron Deficiency Anaemia,Severe,True
+DX00087,ADM00057,PAT00051,J45,Asthma,Moderate,False
+DX00088,ADM00058,PAT00051,I10,Essential Hypertension,Mild,True
+DX00089,ADM00058,PAT00051,N18,Chronic Kidney Disease,Stage 4,False
+DX00090,ADM00059,PAT00052,C34,Malignant Neoplasm of Lung,Stage III,True
+DX00091,ADM00060,PAT00053,G43,Migraine,Episodic,True
+DX00092,ADM00061,PAT00053,C50,Malignant Neoplasm of Breast,Stage III,True
+DX00093,ADM00061,PAT00053,N18,Chronic Kidney Disease,Stage 1,False
+DX00094,ADM00062,PAT00054,C34,Malignant Neoplasm of Lung,Stage I,True
+DX00095,ADM00063,PAT00055,A09,Infectious Gastroenteritis,Mild,True
+DX00096,ADM00064,PAT00056,I21,Acute Myocardial Infarction,STEMI,True
+DX00097,ADM00064,PAT00056,E11,Type 2 Diabetes Mellitus,Uncontrolled,False
+DX00098,ADM00065,PAT00056,S72,Fracture of Femur,Closed,True
+DX00099,ADM00066,PAT00056,C34,Malignant Neoplasm of Lung,Stage I,True
+DX00100,ADM00067,PAT00057,J18,Pneumonia,Mild,True
+DX00101,ADM00067,PAT00057,A09,Infectious Gastroenteritis,Moderate,False
+DX00102,ADM00068,PAT00058,S72,Fracture of Femur,Open,True
+DX00103,ADM00069,PAT00058,D50,Iron Deficiency Anaemia,Moderate,True
+DX00104,ADM00070,PAT00059,G43,Migraine,Chronic,True
+DX00105,ADM00071,PAT00060,S72,Fracture of Femur,Open,True
+DX00106,ADM00071,PAT00060,N18,Chronic Kidney Disease,Stage 3,False
+DX00107,ADM00072,PAT00061,N18,Chronic Kidney Disease,Stage 1,True
+DX00108,ADM00072,PAT00061,C50,Malignant Neoplasm of Breast,Stage II,False
+DX00109,ADM00072,PAT00061,I10,Essential Hypertension,Mild,False
+DX00110,ADM00073,PAT00061,D50,Iron Deficiency Anaemia,Severe,True
+DX00111,ADM00073,PAT00061,N18,Chronic Kidney Disease,Stage 2,False
+DX00112,ADM00074,PAT00062,N18,Chronic Kidney Disease,Stage 3,True
+DX00113,ADM00075,PAT00063,A09,Infectious Gastroenteritis,Mild,True
+DX00114,ADM00076,PAT00063,S72,Fracture of Femur,Closed,True
+DX00115,ADM00077,PAT00064,J18,Pneumonia,Mild,True
+DX00116,ADM00078,PAT00065,D50,Iron Deficiency Anaemia,Severe,True
+DX00117,ADM00079,PAT00067,J45,Asthma,Mild,True
+DX00118,ADM00080,PAT00067,I21,Acute Myocardial Infarction,NSTEMI,True
+DX00119,ADM00081,PAT00067,D50,Iron Deficiency Anaemia,Mild,True
+DX00120,ADM00082,PAT00068,S72,Fracture of Femur,Open,True
+DX00121,ADM00083,PAT00069,G43,Migraine,Episodic,True
+DX00122,ADM00084,PAT00070,I21,Acute Myocardial Infarction,STEMI,True
+DX00123,ADM00084,PAT00070,D50,Iron Deficiency Anaemia,Severe,False
+DX00124,ADM00085,PAT00070,C50,Malignant Neoplasm of Breast,Stage III,True
+DX00125,ADM00086,PAT00071,D50,Iron Deficiency Anaemia,Mild,True
+DX00126,ADM00086,PAT00071,N18,Chronic Kidney Disease,Stage 2,False
+DX00127,ADM00087,PAT00071,J45,Asthma,Severe,True
+DX00128,ADM00087,PAT00071,D50,Iron Deficiency Anaemia,Severe,False
+DX00129,ADM00088,PAT00074,G43,Migraine,Chronic,True
+DX00130,ADM00089,PAT00075,J18,Pneumonia,Moderate,True
+DX00131,ADM00089,PAT00075,C34,Malignant Neoplasm of Lung,Stage III,False
+DX00132,ADM00089,PAT00075,G43,Migraine,Chronic,False
+DX00133,ADM00090,PAT00075,J18,Pneumonia,Mild,True
+DX00134,ADM00091,PAT00076,I10,Essential Hypertension,Moderate,True
+DX00135,ADM00092,PAT00077,C50,Malignant Neoplasm of Breast,Stage IV,True
+DX00136,ADM00093,PAT00080,E11,Type 2 Diabetes Mellitus,Controlled,True
+DX00137,ADM00094,PAT00080,D50,Iron Deficiency Anaemia,Severe,True
+DX00138,ADM00095,PAT00081,N18,Chronic Kidney Disease,Stage 2,True
+DX00139,ADM00095,PAT00081,S72,Fracture of Femur,Closed,False
+DX00140,ADM00096,PAT00081,S72,Fracture of Femur,Open,True
+DX00141,ADM00096,PAT00081,A09,Infectious Gastroenteritis,Mild,False
+DX00142,ADM00096,PAT00081,C34,Malignant Neoplasm of Lung,Stage I,False
+DX00143,ADM00097,PAT00081,A09,Infectious Gastroenteritis,Mild,True
+DX00144,ADM00097,PAT00081,J45,Asthma,Moderate,False
+DX00145,ADM00097,PAT00081,S72,Fracture of Femur,Open,False
+DX00146,ADM00098,PAT00083,C50,Malignant Neoplasm of Breast,Stage IV,True
+DX00147,ADM00099,PAT00084,G43,Migraine,Chronic,True
+DX00148,ADM00100,PAT00085,A09,Infectious Gastroenteritis,Mild,True
+DX00149,ADM00100,PAT00085,J45,Asthma,Severe,False
+DX00150,ADM00101,PAT00086,A09,Infectious Gastroenteritis,Mild,True
+DX00151,ADM00101,PAT00086,C34,Malignant Neoplasm of Lung,Stage II,False
+DX00152,ADM00101,PAT00086,J18,Pneumonia,Severe,False
+DX00153,ADM00102,PAT00087,I21,Acute Myocardial Infarction,NSTEMI,True
+DX00154,ADM00102,PAT00087,C34,Malignant Neoplasm of Lung,Stage III,False
+DX00155,ADM00103,PAT00087,A09,Infectious Gastroenteritis,Mild,True
+DX00156,ADM00104,PAT00087,I21,Acute Myocardial Infarction,STEMI,True
+DX00157,ADM00105,PAT00088,J18,Pneumonia,Moderate,True
+DX00158,ADM00106,PAT00089,I10,Essential Hypertension,Severe,True
+DX00159,ADM00107,PAT00089,D50,Iron Deficiency Anaemia,Mild,True
+DX00160,ADM00107,PAT00089,A09,Infectious Gastroenteritis,Moderate,False
+DX00161,ADM00107,PAT00089,J18,Pneumonia,Mild,False
+DX00162,ADM00108,PAT00090,J45,Asthma,Severe,True
+DX00163,ADM00108,PAT00090,J18,Pneumonia,Mild,False
+DX00164,ADM00109,PAT00091,S72,Fracture of Femur,Open,True
+DX00165,ADM00110,PAT00092,I10,Essential Hypertension,Mild,True
+DX00166,ADM00111,PAT00093,I10,Essential Hypertension,Severe,True
+DX00167,ADM00112,PAT00093,J45,Asthma,Mild,True
+DX00168,ADM00112,PAT00093,C50,Malignant Neoplasm of Breast,Stage I,False
+DX00169,ADM00112,PAT00093,I21,Acute Myocardial Infarction,NSTEMI,False
+DX00170,ADM00113,PAT00094,N18,Chronic Kidney Disease,Stage 1,True
+DX00171,ADM00113,PAT00094,J18,Pneumonia,Moderate,False
+DX00172,ADM00114,PAT00095,A09,Infectious Gastroenteritis,Mild,True
+DX00173,ADM00114,PAT00095,E11,Type 2 Diabetes Mellitus,Uncontrolled,False
+DX00174,ADM00115,PAT00095,J18,Pneumonia,Severe,True
+DX00175,ADM00116,PAT00097,C50,Malignant Neoplasm of Breast,Stage II,True
+DX00176,ADM00116,PAT00097,G43,Migraine,Chronic,False
+DX00177,ADM00117,PAT00097,A09,Infectious Gastroenteritis,Moderate,True
+DX00178,ADM00118,PAT00097,N18,Chronic Kidney Disease,Stage 3,True
+DX00179,ADM00118,PAT00097,I21,Acute Myocardial Infarction,STEMI,False
+DX00180,ADM00119,PAT00098,N18,Chronic Kidney Disease,Stage 3,True
+DX00181,ADM00119,PAT00098,S72,Fracture of Femur,Closed,False
+DX00182,ADM00120,PAT00098,J45,Asthma,Severe,True
+DX00183,ADM00121,PAT00099,C34,Malignant Neoplasm of Lung,Stage I,True
+DX00184,ADM00122,PAT00100,J18,Pneumonia,Mild,True
+DX00185,ADM00123,PAT00101,C50,Malignant Neoplasm of Breast,Stage IV,True
+DX00186,ADM00124,PAT00102,E11,Type 2 Diabetes Mellitus,Uncontrolled,True
+DX00187,ADM00125,PAT00103,A09,Infectious Gastroenteritis,Moderate,True
+DX00188,ADM00126,PAT00105,A09,Infectious Gastroenteritis,Mild,True
+DX00189,ADM00127,PAT00106,G43,Migraine,Episodic,True
+DX00190,ADM00127,PAT00106,I21,Acute Myocardial Infarction,STEMI,False
+DX00191,ADM00128,PAT00107,N18,Chronic Kidney Disease,Stage 3,True
+DX00192,ADM00129,PAT00108,I10,Essential Hypertension,Moderate,True
+DX00193,ADM00130,PAT00108,I21,Acute Myocardial Infarction,NSTEMI,True
+DX00194,ADM00130,PAT00108,E11,Type 2 Diabetes Mellitus,Uncontrolled,False
+DX00195,ADM00131,PAT00110,S72,Fracture of Femur,Closed,True
+DX00196,ADM00131,PAT00110,N18,Chronic Kidney Disease,Stage 3,False
+DX00197,ADM00131,PAT00110,D50,Iron Deficiency Anaemia,Mild,False
+DX00198,ADM00132,PAT00111,D50,Iron Deficiency Anaemia,Moderate,True
+DX00199,ADM00132,PAT00111,C50,Malignant Neoplasm of Breast,Stage I,False
+DX00200,ADM00133,PAT00112,G43,Migraine,Episodic,True
+DX00201,ADM00133,PAT00112,J18,Pneumonia,Severe,False
+DX00202,ADM00134,PAT00113,N18,Chronic Kidney Disease,Stage 3,True
+DX00203,ADM00135,PAT00114,E11,Type 2 Diabetes Mellitus,Controlled,True
+DX00204,ADM00135,PAT00114,I10,Essential Hypertension,Moderate,False
+DX00205,ADM00136,PAT00115,J18,Pneumonia,Severe,True
+DX00206,ADM00137,PAT00116,C50,Malignant Neoplasm of Breast,Stage III,True
+DX00207,ADM00138,PAT00117,I21,Acute Myocardial Infarction,STEMI,True
+DX00208,ADM00139,PAT00117,N18,Chronic Kidney Disease,Stage 1,True
+DX00209,ADM00139,PAT00117,S72,Fracture of Femur,Closed,False
+DX00210,ADM00140,PAT00120,A09,Infectious Gastroenteritis,Mild,True
+DX00211,ADM00140,PAT00120,J45,Asthma,Severe,False
+DX00212,ADM00141,PAT00120,C50,Malignant Neoplasm of Breast,Stage II,True
+DX00213,ADM00142,PAT00120,I10,Essential Hypertension,Mild,True
+DX00214,ADM00143,PAT00121,S72,Fracture of Femur,Open,True
+DX00215,ADM00144,PAT00121,D50,Iron Deficiency Anaemia,Moderate,True
+DX00216,ADM00144,PAT00121,J45,Asthma,Moderate,False
+DX00217,ADM00145,PAT00123,I10,Essential Hypertension,Moderate,True
+DX00218,ADM00146,PAT00125,I10,Essential Hypertension,Moderate,True
+DX00219,ADM00147,PAT00126,C34,Malignant Neoplasm of Lung,Stage I,True
+DX00220,ADM00147,PAT00126,I21,Acute Myocardial Infarction,STEMI,False
+DX00221,ADM00148,PAT00126,E11,Type 2 Diabetes Mellitus,Controlled,True
+DX00222,ADM00149,PAT00126,C50,Malignant Neoplasm of Breast,Stage III,True
+DX00223,ADM00149,PAT00126,I21,Acute Myocardial Infarction,STEMI,False
+DX00224,ADM00150,PAT00127,A09,Infectious Gastroenteritis,Moderate,True
+DX00225,ADM00150,PAT00127,E11,Type 2 Diabetes Mellitus,Controlled,False
+DX00226,ADM00151,PAT00127,J45,Asthma,Mild,True
+DX00227,ADM00151,PAT00127,C34,Malignant Neoplasm of Lung,Stage II,False
+DX00228,ADM00151,PAT00127,G43,Migraine,Episodic,False
+DX00229,ADM00152,PAT00128,S72,Fracture of Femur,Open,True
+DX00230,ADM00152,PAT00128,C34,Malignant Neoplasm of Lung,Stage I,False
+DX00231,ADM00152,PAT00128,A09,Infectious Gastroenteritis,Moderate,False
+DX00232,ADM00153,PAT00130,J18,Pneumonia,Moderate,True
+DX00233,ADM00154,PAT00131,E11,Type 2 Diabetes Mellitus,Uncontrolled,True
+DX00234,ADM00155,PAT00131,G43,Migraine,Chronic,True
+DX00235,ADM00156,PAT00132,E11,Type 2 Diabetes Mellitus,Controlled,True
+DX00236,ADM00157,PAT00134,C50,Malignant Neoplasm of Breast,Stage III,True
+DX00237,ADM00158,PAT00134,A09,Infectious Gastroenteritis,Moderate,True
+DX00238,ADM00159,PAT00134,J18,Pneumonia,Severe,True
+DX00239,ADM00159,PAT00134,A09,Infectious Gastroenteritis,Mild,False
+DX00240,ADM00160,PAT00135,I10,Essential Hypertension,Moderate,True
+DX00241,ADM00160,PAT00135,N18,Chronic Kidney Disease,Stage 1,False
+DX00242,ADM00160,PAT00135,C50,Malignant Neoplasm of Breast,Stage I,False
+DX00243,ADM00161,PAT00136,A09,Infectious Gastroenteritis,Mild,True
+DX00244,ADM00162,PAT00136,I10,Essential Hypertension,Moderate,True
+DX00245,ADM00162,PAT00136,D50,Iron Deficiency Anaemia,Moderate,False
+DX00246,ADM00163,PAT00136,D50,Iron Deficiency Anaemia,Mild,True
+DX00247,ADM00164,PAT00137,J18,Pneumonia,Mild,True
+DX00248,ADM00164,PAT00137,A09,Infectious Gastroenteritis,Mild,False
+DX00249,ADM00164,PAT00137,C34,Malignant Neoplasm of Lung,Stage I,False
+DX00250,ADM00165,PAT00138,I10,Essential Hypertension,Mild,True
+DX00251,ADM00165,PAT00138,N18,Chronic Kidney Disease,Stage 4,False
+DX00252,ADM00166,PAT00138,S72,Fracture of Femur,Closed,True
+DX00253,ADM00167,PAT00139,G43,Migraine,Chronic,True
+DX00254,ADM00168,PAT00140,D50,Iron Deficiency Anaemia,Severe,True
+DX00255,ADM00168,PAT00140,N18,Chronic Kidney Disease,Stage 1,False
+DX00256,ADM00169,PAT00141,C34,Malignant Neoplasm of Lung,Stage I,True
+DX00257,ADM00169,PAT00141,J45,Asthma,Mild,False
+DX00258,ADM00170,PAT00141,S72,Fracture of Femur,Open,True
+DX00259,ADM00171,PAT00142,I21,Acute Myocardial Infarction,NSTEMI,True
+DX00260,ADM00172,PAT00143,J45,Asthma,Mild,True
+DX00261,ADM00172,PAT00143,A09,Infectious Gastroenteritis,Mild,False
+DX00262,ADM00173,PAT00143,G43,Migraine,Episodic,True
+DX00263,ADM00173,PAT00143,I21,Acute Myocardial Infarction,STEMI,False
+DX00264,ADM00174,PAT00144,J18,Pneumonia,Severe,True
+DX00265,ADM00175,PAT00145,D50,Iron Deficiency Anaemia,Severe,True
+DX00266,ADM00175,PAT00145,J45,Asthma,Severe,False
+DX00267,ADM00175,PAT00145,I10,Essential Hypertension,Mild,False
+DX00268,ADM00176,PAT00146,I21,Acute Myocardial Infarction,STEMI,True
+DX00269,ADM00176,PAT00146,C50,Malignant Neoplasm of Breast,Stage IV,False
+DX00270,ADM00177,PAT00147,I10,Essential Hypertension,Mild,True
+DX00271,ADM00177,PAT00147,A09,Infectious Gastroenteritis,Mild,False
+DX00272,ADM00177,PAT00147,S72,Fracture of Femur,Closed,False
+DX00273,ADM00178,PAT00149,J45,Asthma,Severe,True
+DX00274,ADM00179,PAT00149,D50,Iron Deficiency Anaemia,Mild,True
+DX00275,ADM00179,PAT00149,J18,Pneumonia,Mild,False
+DX00276,ADM00180,PAT00150,S72,Fracture of Femur,Open,True
+DX00277,ADM00181,PAT00150,E11,Type 2 Diabetes Mellitus,Uncontrolled,True
+DX00278,ADM00182,PAT00151,C34,Malignant Neoplasm of Lung,Stage II,True
+DX00279,ADM00183,PAT00152,G43,Migraine,Episodic,True
+DX00280,ADM00184,PAT00154,J18,Pneumonia,Severe,True
+DX00281,ADM00184,PAT00154,S72,Fracture of Femur,Closed,False
+DX00282,ADM00185,PAT00154,N18,Chronic Kidney Disease,Stage 4,True
+DX00283,ADM00186,PAT00154,C50,Malignant Neoplasm of Breast,Stage II,True
+DX00284,ADM00187,PAT00155,G43,Migraine,Episodic,True
+DX00285,ADM00188,PAT00157,C50,Malignant Neoplasm of Breast,Stage I,True
+DX00286,ADM00188,PAT00157,N18,Chronic Kidney Disease,Stage 4,False
+DX00287,ADM00189,PAT00157,D50,Iron Deficiency Anaemia,Moderate,True
+DX00288,ADM00190,PAT00157,D50,Iron Deficiency Anaemia,Severe,True
+DX00289,ADM00190,PAT00157,C50,Malignant Neoplasm of Breast,Stage I,False
+DX00290,ADM00191,PAT00158,N18,Chronic Kidney Disease,Stage 2,True
+DX00291,ADM00191,PAT00158,J45,Asthma,Severe,False
+DX00292,ADM00192,PAT00158,E11,Type 2 Diabetes Mellitus,Controlled,True
+DX00293,ADM00192,PAT00158,C50,Malignant Neoplasm of Breast,Stage III,False
+DX00294,ADM00193,PAT00159,E11,Type 2 Diabetes Mellitus,Uncontrolled,True
+DX00295,ADM00194,PAT00159,A09,Infectious Gastroenteritis,Moderate,True
+DX00296,ADM00194,PAT00159,D50,Iron Deficiency Anaemia,Moderate,False
+DX00297,ADM00195,PAT00160,I21,Acute Myocardial Infarction,NSTEMI,True
+DX00298,ADM00195,PAT00160,S72,Fracture of Femur,Closed,False
+DX00299,ADM00196,PAT00160,J45,Asthma,Severe,True
+DX00300,ADM00197,PAT00160,I10,Essential Hypertension,Moderate,True
+DX00301,ADM00198,PAT00161,I10,Essential Hypertension,Mild,True
+DX00302,ADM00199,PAT00161,E11,Type 2 Diabetes Mellitus,Uncontrolled,True
+DX00303,ADM00199,PAT00161,C34,Malignant Neoplasm of Lung,Stage I,False
+DX00304,ADM00200,PAT00162,C50,Malignant Neoplasm of Breast,Stage IV,True
+DX00305,ADM00201,PAT00163,I21,Acute Myocardial Infarction,NSTEMI,True
+DX00306,ADM00202,PAT00163,I10,Essential Hypertension,Moderate,True
+DX00307,ADM00203,PAT00163,I21,Acute Myocardial Infarction,NSTEMI,True
+DX00308,ADM00204,PAT00164,I10,Essential Hypertension,Moderate,True
+DX00309,ADM00205,PAT00165,J45,Asthma,Severe,True
+DX00310,ADM00206,PAT00166,E11,Type 2 Diabetes Mellitus,Uncontrolled,True
+DX00311,ADM00206,PAT00166,N18,Chronic Kidney Disease,Stage 3,False
+DX00312,ADM00207,PAT00166,A09,Infectious Gastroenteritis,Mild,True
+DX00313,ADM00207,PAT00166,C34,Malignant Neoplasm of Lung,Stage I,False
+DX00314,ADM00208,PAT00166,A09,Infectious Gastroenteritis,Mild,True
+DX00315,ADM00208,PAT00166,I10,Essential Hypertension,Mild,False
+DX00316,ADM00209,PAT00167,J45,Asthma,Mild,True
+DX00317,ADM00210,PAT00168,S72,Fracture of Femur,Closed,True
+DX00318,ADM00210,PAT00168,G43,Migraine,Episodic,False
+DX00319,ADM00211,PAT00169,G43,Migraine,Episodic,True
+DX00320,ADM00211,PAT00169,S72,Fracture of Femur,Open,False
+DX00321,ADM00212,PAT00170,A09,Infectious Gastroenteritis,Moderate,True
+DX00322,ADM00212,PAT00170,C50,Malignant Neoplasm of Breast,Stage II,False
+DX00323,ADM00213,PAT00171,A09,Infectious Gastroenteritis,Mild,True
+DX00324,ADM00213,PAT00171,N18,Chronic Kidney Disease,Stage 4,False
+DX00325,ADM00214,PAT00171,A09,Infectious Gastroenteritis,Moderate,True
+DX00326,ADM00215,PAT00172,C50,Malignant Neoplasm of Breast,Stage III,True
+DX00327,ADM00216,PAT00172,C50,Malignant Neoplasm of Breast,Stage III,True
+DX00328,ADM00216,PAT00172,D50,Iron Deficiency Anaemia,Moderate,False
+DX00329,ADM00216,PAT00172,G43,Migraine,Episodic,False
+DX00330,ADM00217,PAT00172,D50,Iron Deficiency Anaemia,Severe,True
+DX00331,ADM00218,PAT00173,A09,Infectious Gastroenteritis,Moderate,True
+DX00332,ADM00219,PAT00174,G43,Migraine,Episodic,True
+DX00333,ADM00219,PAT00174,J18,Pneumonia,Mild,False
+DX00334,ADM00220,PAT00175,N18,Chronic Kidney Disease,Stage 1,True
+DX00335,ADM00221,PAT00176,A09,Infectious Gastroenteritis,Moderate,True
+DX00336,ADM00221,PAT00176,I21,Acute Myocardial Infarction,NSTEMI,False
+DX00337,ADM00222,PAT00176,D50,Iron Deficiency Anaemia,Moderate,True
+DX00338,ADM00223,PAT00178,I21,Acute Myocardial Infarction,STEMI,True
+DX00339,ADM00223,PAT00178,J45,Asthma,Mild,False
+DX00340,ADM00224,PAT00179,N18,Chronic Kidney Disease,Stage 3,True
+DX00341,ADM00225,PAT00180,C50,Malignant Neoplasm of Breast,Stage IV,True
+DX00342,ADM00226,PAT00180,J45,Asthma,Moderate,True
+DX00343,ADM00227,PAT00181,J18,Pneumonia,Moderate,True
+DX00344,ADM00228,PAT00181,I21,Acute Myocardial Infarction,STEMI,True
+DX00345,ADM00229,PAT00182,I21,Acute Myocardial Infarction,STEMI,True
+DX00346,ADM00230,PAT00183,D50,Iron Deficiency Anaemia,Moderate,True
+DX00347,ADM00231,PAT00183,S72,Fracture of Femur,Open,True
+DX00348,ADM00231,PAT00183,I21,Acute Myocardial Infarction,STEMI,False
+DX00349,ADM00232,PAT00184,G43,Migraine,Episodic,True
+DX00350,ADM00233,PAT00184,G43,Migraine,Episodic,True
+DX00351,ADM00234,PAT00185,J18,Pneumonia,Severe,True
+DX00352,ADM00235,PAT00185,C50,Malignant Neoplasm of Breast,Stage II,True
+DX00353,ADM00236,PAT00186,N18,Chronic Kidney Disease,Stage 4,True
+DX00354,ADM00236,PAT00186,E11,Type 2 Diabetes Mellitus,Uncontrolled,False
+DX00355,ADM00237,PAT00187,G43,Migraine,Episodic,True
+DX00356,ADM00237,PAT00187,I21,Acute Myocardial Infarction,NSTEMI,False
+DX00357,ADM00238,PAT00188,A09,Infectious Gastroenteritis,Mild,True
+DX00358,ADM00239,PAT00189,S72,Fracture of Femur,Open,True
+DX00359,ADM00240,PAT00190,J18,Pneumonia,Mild,True
+DX00360,ADM00241,PAT00190,D50,Iron Deficiency Anaemia,Moderate,True
+DX00361,ADM00242,PAT00191,I10,Essential Hypertension,Severe,True
+DX00362,ADM00243,PAT00191,D50,Iron Deficiency Anaemia,Severe,True
+DX00363,ADM00244,PAT00192,J18,Pneumonia,Severe,True
+DX00364,ADM00244,PAT00192,E11,Type 2 Diabetes Mellitus,Uncontrolled,False
+DX00365,ADM00245,PAT00193,C50,Malignant Neoplasm of Breast,Stage I,True
+DX00366,ADM00245,PAT00193,A09,Infectious Gastroenteritis,Moderate,False
+DX00367,ADM00246,PAT00193,E11,Type 2 Diabetes Mellitus,Controlled,True
+DX00368,ADM00246,PAT00193,A09,Infectious Gastroenteritis,Moderate,False
+DX00369,ADM00247,PAT00194,J45,Asthma,Moderate,True
+DX00370,ADM00248,PAT00194,I21,Acute Myocardial Infarction,STEMI,True
+DX00371,ADM00248,PAT00194,A09,Infectious Gastroenteritis,Moderate,False
+DX00372,ADM00249,PAT00195,E11,Type 2 Diabetes Mellitus,Controlled,True
+DX00373,ADM00250,PAT00196,G43,Migraine,Chronic,True
+DX00374,ADM00251,PAT00197,N18,Chronic Kidney Disease,Stage 4,True
+DX00375,ADM00252,PAT00198,I10,Essential Hypertension,Moderate,True
+DX00376,ADM00253,PAT00198,I10,Essential Hypertension,Mild,True
+DX00377,ADM00253,PAT00198,S72,Fracture of Femur,Open,False
+DX00378,ADM00254,PAT00199,J45,Asthma,Severe,True
+DX00379,ADM00254,PAT00199,E11,Type 2 Diabetes Mellitus,Uncontrolled,False
+DX00380,ADM00255,PAT00200,I10,Essential Hypertension,Severe,True
+DX00381,ADM00256,PAT00201,S72,Fracture of Femur,Closed,True
+DX00382,ADM00257,PAT00201,G43,Migraine,Chronic,True
+DX00383,ADM00258,PAT00201,J18,Pneumonia,Mild,True
+DX00384,ADM00259,PAT00202,S72,Fracture of Femur,Open,True
+DX00385,ADM00259,PAT00202,A09,Infectious Gastroenteritis,Mild,False
+DX00386,ADM00260,PAT00202,S72,Fracture of Femur,Open,True
+DX00387,ADM00260,PAT00202,J18,Pneumonia,Moderate,False
+DX00388,ADM00261,PAT00202,S72,Fracture of Femur,Closed,True
+DX00389,ADM00262,PAT00204,S72,Fracture of Femur,Open,True
+DX00390,ADM00263,PAT00204,C50,Malignant Neoplasm of Breast,Stage II,True
+DX00391,ADM00263,PAT00204,I21,Acute Myocardial Infarction,NSTEMI,False
+DX00392,ADM00263,PAT00204,A09,Infectious Gastroenteritis,Mild,False
+DX00393,ADM00264,PAT00204,J18,Pneumonia,Severe,True
+DX00394,ADM00265,PAT00205,S72,Fracture of Femur,Open,True
+DX00395,ADM00265,PAT00205,J18,Pneumonia,Severe,False
+DX00396,ADM00265,PAT00205,C34,Malignant Neoplasm of Lung,Stage I,False
+DX00397,ADM00266,PAT00205,J18,Pneumonia,Severe,True
+DX00398,ADM00267,PAT00206,A09,Infectious Gastroenteritis,Mild,True
+DX00399,ADM00268,PAT00207,I10,Essential Hypertension,Mild,True
+DX00400,ADM00269,PAT00208,J18,Pneumonia,Mild,True
+DX00401,ADM00270,PAT00209,S72,Fracture of Femur,Open,True
+DX00402,ADM00270,PAT00209,C34,Malignant Neoplasm of Lung,Stage II,False
+DX00403,ADM00271,PAT00209,D50,Iron Deficiency Anaemia,Moderate,True
+DX00404,ADM00272,PAT00210,A09,Infectious Gastroenteritis,Mild,True
+DX00405,ADM00272,PAT00210,J45,Asthma,Severe,False
+DX00406,ADM00273,PAT00211,N18,Chronic Kidney Disease,Stage 4,True
+DX00407,ADM00274,PAT00211,G43,Migraine,Episodic,True
+DX00408,ADM00275,PAT00211,D50,Iron Deficiency Anaemia,Severe,True
+DX00409,ADM00276,PAT00212,I21,Acute Myocardial Infarction,STEMI,True
+DX00410,ADM00277,PAT00212,C50,Malignant Neoplasm of Breast,Stage I,True
+DX00411,ADM00277,PAT00212,G43,Migraine,Episodic,False
+DX00412,ADM00277,PAT00212,I21,Acute Myocardial Infarction,STEMI,False
+DX00413,ADM00278,PAT00213,I10,Essential Hypertension,Severe,True
+DX00414,ADM00279,PAT00214,D50,Iron Deficiency Anaemia,Mild,True
+DX00415,ADM00279,PAT00214,J18,Pneumonia,Severe,False
+DX00416,ADM00280,PAT00215,I21,Acute Myocardial Infarction,STEMI,True
+DX00417,ADM00281,PAT00216,C50,Malignant Neoplasm of Breast,Stage IV,True
+DX00418,ADM00281,PAT00216,J45,Asthma,Mild,False
+DX00419,ADM00281,PAT00216,N18,Chronic Kidney Disease,Stage 2,False
+DX00420,ADM00282,PAT00218,I21,Acute Myocardial Infarction,NSTEMI,True
+DX00421,ADM00282,PAT00218,C34,Malignant Neoplasm of Lung,Stage II,False
+DX00422,ADM00282,PAT00218,I10,Essential Hypertension,Moderate,False
+DX00423,ADM00283,PAT00219,I10,Essential Hypertension,Mild,True
+DX00424,ADM00283,PAT00219,C50,Malignant Neoplasm of Breast,Stage II,False
+DX00425,ADM00284,PAT00219,I10,Essential Hypertension,Mild,True
+DX00426,ADM00285,PAT00220,I10,Essential Hypertension,Moderate,True
+DX00427,ADM00286,PAT00221,S72,Fracture of Femur,Open,True
+DX00428,ADM00286,PAT00221,A09,Infectious Gastroenteritis,Mild,False
+DX00429,ADM00287,PAT00222,E11,Type 2 Diabetes Mellitus,Uncontrolled,True
+DX00430,ADM00287,PAT00222,I10,Essential Hypertension,Severe,False
+DX00431,ADM00288,PAT00223,I10,Essential Hypertension,Mild,True
+DX00432,ADM00289,PAT00224,D50,Iron Deficiency Anaemia,Severe,True
+DX00433,ADM00289,PAT00224,I10,Essential Hypertension,Severe,False
+DX00434,ADM00290,PAT00225,C50,Malignant Neoplasm of Breast,Stage II,True
+DX00435,ADM00290,PAT00225,G43,Migraine,Chronic,False
+DX00436,ADM00291,PAT00226,S72,Fracture of Femur,Open,True
+DX00437,ADM00292,PAT00226,I10,Essential Hypertension,Moderate,True
+DX00438,ADM00293,PAT00227,I10,Essential Hypertension,Mild,True
+DX00439,ADM00293,PAT00227,J45,Asthma,Severe,False
+DX00440,ADM00294,PAT00228,C34,Malignant Neoplasm of Lung,Stage III,True
+DX00441,ADM00295,PAT00229,N18,Chronic Kidney Disease,Stage 4,True
+DX00442,ADM00295,PAT00229,I21,Acute Myocardial Infarction,STEMI,False
+DX00443,ADM00295,PAT00229,D50,Iron Deficiency Anaemia,Moderate,False
+DX00444,ADM00296,PAT00230,D50,Iron Deficiency Anaemia,Moderate,True
+DX00445,ADM00297,PAT00231,N18,Chronic Kidney Disease,Stage 2,True
+DX00446,ADM00298,PAT00232,J18,Pneumonia,Severe,True
+DX00447,ADM00299,PAT00233,A09,Infectious Gastroenteritis,Moderate,True
+DX00448,ADM00299,PAT00233,N18,Chronic Kidney Disease,Stage 3,False
+DX00449,ADM00300,PAT00233,A09,Infectious Gastroenteritis,Moderate,True
+DX00450,ADM00300,PAT00233,E11,Type 2 Diabetes Mellitus,Uncontrolled,False
+DX00451,ADM00301,PAT00234,J45,Asthma,Severe,True
+DX00452,ADM00302,PAT00234,G43,Migraine,Chronic,True
+DX00453,ADM00302,PAT00234,I10,Essential Hypertension,Severe,False
+DX00454,ADM00303,PAT00235,N18,Chronic Kidney Disease,Stage 2,True
+DX00455,ADM00303,PAT00235,J18,Pneumonia,Moderate,False
+DX00456,ADM00304,PAT00235,I21,Acute Myocardial Infarction,STEMI,True
+DX00457,ADM00304,PAT00235,D50,Iron Deficiency Anaemia,Mild,False
+DX00458,ADM00305,PAT00236,J18,Pneumonia,Severe,True
+DX00459,ADM00306,PAT00236,I21,Acute Myocardial Infarction,STEMI,True
+DX00460,ADM00307,PAT00238,S72,Fracture of Femur,Closed,True
+DX00461,ADM00308,PAT00238,E11,Type 2 Diabetes Mellitus,Uncontrolled,True
+DX00462,ADM00308,PAT00238,G43,Migraine,Chronic,False
+DX00463,ADM00309,PAT00239,I10,Essential Hypertension,Mild,True
+DX00464,ADM00310,PAT00240,S72,Fracture of Femur,Open,True
+DX00465,ADM00310,PAT00240,N18,Chronic Kidney Disease,Stage 4,False
+DX00466,ADM00311,PAT00240,S72,Fracture of Femur,Closed,True
+DX00467,ADM00311,PAT00240,J45,Asthma,Severe,False
+DX00468,ADM00312,PAT00241,J45,Asthma,Moderate,True
+DX00469,ADM00312,PAT00241,D50,Iron Deficiency Anaemia,Mild,False
+DX00470,ADM00312,PAT00241,C50,Malignant Neoplasm of Breast,Stage II,False
+DX00471,ADM00313,PAT00241,J45,Asthma,Moderate,True
+DX00472,ADM00314,PAT00242,J45,Asthma,Mild,True
+DX00473,ADM00314,PAT00242,C50,Malignant Neoplasm of Breast,Stage II,False
+DX00474,ADM00315,PAT00242,S72,Fracture of Femur,Open,True
+DX00475,ADM00315,PAT00242,J18,Pneumonia,Mild,False
+DX00476,ADM00315,PAT00242,C50,Malignant Neoplasm of Breast,Stage III,False
+DX00477,ADM00316,PAT00243,D50,Iron Deficiency Anaemia,Moderate,True
+DX00478,ADM00316,PAT00243,E11,Type 2 Diabetes Mellitus,Controlled,False
+DX00479,ADM00317,PAT00244,E11,Type 2 Diabetes Mellitus,Controlled,True
+DX00480,ADM00318,PAT00245,D50,Iron Deficiency Anaemia,Severe,True
+DX00481,ADM00318,PAT00245,A09,Infectious Gastroenteritis,Moderate,False
+DX00482,ADM00319,PAT00246,C50,Malignant Neoplasm of Breast,Stage III,True
+DX00483,ADM00320,PAT00247,N18,Chronic Kidney Disease,Stage 3,True
+DX00484,ADM00321,PAT00247,N18,Chronic Kidney Disease,Stage 4,True
+DX00485,ADM00322,PAT00248,A09,Infectious Gastroenteritis,Mild,True
+DX00486,ADM00322,PAT00248,I21,Acute Myocardial Infarction,STEMI,False
+DX00487,ADM00323,PAT00248,A09,Infectious Gastroenteritis,Mild,True
+DX00488,ADM00323,PAT00248,C50,Malignant Neoplasm of Breast,Stage IV,False
+DX00489,ADM00323,PAT00248,S72,Fracture of Femur,Closed,False
+DX00490,ADM00324,PAT00249,C34,Malignant Neoplasm of Lung,Stage I,True
+DX00491,ADM00325,PAT00249,S72,Fracture of Femur,Open,True
+DX00492,ADM00326,PAT00250,I21,Acute Myocardial Infarction,STEMI,True
+DX00493,ADM00327,PAT00251,I21,Acute Myocardial Infarction,NSTEMI,True
+DX00494,ADM00328,PAT00251,G43,Migraine,Chronic,True
+DX00495,ADM00329,PAT00252,I21,Acute Myocardial Infarction,NSTEMI,True
+DX00496,ADM00329,PAT00252,D50,Iron Deficiency Anaemia,Moderate,False
+DX00497,ADM00330,PAT00253,C34,Malignant Neoplasm of Lung,Stage II,True
+DX00498,ADM00330,PAT00253,I21,Acute Myocardial Infarction,NSTEMI,False
+DX00499,ADM00331,PAT00253,G43,Migraine,Chronic,True
+DX00500,ADM00331,PAT00253,C50,Malignant Neoplasm of Breast,Stage I,False
+DX00501,ADM00332,PAT00254,S72,Fracture of Femur,Open,True
+DX00502,ADM00332,PAT00254,D50,Iron Deficiency Anaemia,Moderate,False
+DX00503,ADM00332,PAT00254,C50,Malignant Neoplasm of Breast,Stage I,False
+DX00504,ADM00333,PAT00257,I21,Acute Myocardial Infarction,NSTEMI,True
+DX00505,ADM00334,PAT00257,I21,Acute Myocardial Infarction,STEMI,True
+DX00506,ADM00335,PAT00258,I10,Essential Hypertension,Moderate,True
+DX00507,ADM00336,PAT00259,I21,Acute Myocardial Infarction,NSTEMI,True
+DX00508,ADM00337,PAT00259,E11,Type 2 Diabetes Mellitus,Controlled,True
+DX00509,ADM00338,PAT00260,D50,Iron Deficiency Anaemia,Moderate,True
+DX00510,ADM00339,PAT00260,C34,Malignant Neoplasm of Lung,Stage III,True
+DX00511,ADM00340,PAT00261,D50,Iron Deficiency Anaemia,Mild,True
+DX00512,ADM00340,PAT00261,I10,Essential Hypertension,Mild,False
+DX00513,ADM00341,PAT00262,I21,Acute Myocardial Infarction,NSTEMI,True
+DX00514,ADM00342,PAT00264,J18,Pneumonia,Moderate,True
+DX00515,ADM00343,PAT00266,I10,Essential Hypertension,Moderate,True
+DX00516,ADM00343,PAT00266,E11,Type 2 Diabetes Mellitus,Controlled,False
+DX00517,ADM00344,PAT00266,I21,Acute Myocardial Infarction,NSTEMI,True
+DX00518,ADM00344,PAT00266,J18,Pneumonia,Moderate,False
+DX00519,ADM00344,PAT00266,I10,Essential Hypertension,Mild,False
+DX00520,ADM00345,PAT00267,C34,Malignant Neoplasm of Lung,Stage I,True
+DX00521,ADM00345,PAT00267,N18,Chronic Kidney Disease,Stage 2,False
+DX00522,ADM00345,PAT00267,I21,Acute Myocardial Infarction,STEMI,False
+DX00523,ADM00346,PAT00268,G43,Migraine,Episodic,True
+DX00524,ADM00346,PAT00268,I10,Essential Hypertension,Mild,False
+DX00525,ADM00347,PAT00269,D50,Iron Deficiency Anaemia,Moderate,True
+DX00526,ADM00347,PAT00269,E11,Type 2 Diabetes Mellitus,Controlled,False
+DX00527,ADM00347,PAT00269,J18,Pneumonia,Severe,False
+DX00528,ADM00348,PAT00270,N18,Chronic Kidney Disease,Stage 4,True
+DX00529,ADM00348,PAT00270,E11,Type 2 Diabetes Mellitus,Uncontrolled,False
+DX00530,ADM00349,PAT00271,A09,Infectious Gastroenteritis,Mild,True
+DX00531,ADM00349,PAT00271,C50,Malignant Neoplasm of Breast,Stage III,False
+DX00532,ADM00350,PAT00272,S72,Fracture of Femur,Open,True
+DX00533,ADM00351,PAT00273,G43,Migraine,Chronic,True
+DX00534,ADM00352,PAT00274,C34,Malignant Neoplasm of Lung,Stage II,True
+DX00535,ADM00352,PAT00274,I10,Essential Hypertension,Moderate,False
+DX00536,ADM00353,PAT00276,C50,Malignant Neoplasm of Breast,Stage IV,True
+DX00537,ADM00353,PAT00276,J18,Pneumonia,Severe,False
+DX00538,ADM00353,PAT00276,G43,Migraine,Chronic,False
+DX00539,ADM00354,PAT00277,C34,Malignant Neoplasm of Lung,Stage I,True
+DX00540,ADM00355,PAT00277,C50,Malignant Neoplasm of Breast,Stage II,True
+DX00541,ADM00356,PAT00279,N18,Chronic Kidney Disease,Stage 1,True
+DX00542,ADM00357,PAT00279,A09,Infectious Gastroenteritis,Mild,True
+DX00543,ADM00357,PAT00279,N18,Chronic Kidney Disease,Stage 2,False
+DX00544,ADM00358,PAT00279,I21,Acute Myocardial Infarction,STEMI,True
+DX00545,ADM00358,PAT00279,I10,Essential Hypertension,Severe,False
+DX00546,ADM00359,PAT00280,D50,Iron Deficiency Anaemia,Severe,True
+DX00547,ADM00359,PAT00280,S72,Fracture of Femur,Closed,False
+DX00548,ADM00360,PAT00282,E11,Type 2 Diabetes Mellitus,Controlled,True
+DX00549,ADM00360,PAT00282,G43,Migraine,Chronic,False
+DX00550,ADM00361,PAT00282,A09,Infectious Gastroenteritis,Mild,True
+DX00551,ADM00362,PAT00283,D50,Iron Deficiency Anaemia,Mild,True
+DX00552,ADM00363,PAT00283,E11,Type 2 Diabetes Mellitus,Uncontrolled,True
+DX00553,ADM00364,PAT00284,C50,Malignant Neoplasm of Breast,Stage IV,True
+DX00554,ADM00364,PAT00284,D50,Iron Deficiency Anaemia,Moderate,False
+DX00555,ADM00365,PAT00285,G43,Migraine,Episodic,True
+DX00556,ADM00366,PAT00286,E11,Type 2 Diabetes Mellitus,Uncontrolled,True
+DX00557,ADM00366,PAT00286,C34,Malignant Neoplasm of Lung,Stage III,False
+DX00558,ADM00367,PAT00286,N18,Chronic Kidney Disease,Stage 2,True
+DX00559,ADM00368,PAT00287,C34,Malignant Neoplasm of Lung,Stage III,True
+DX00560,ADM00369,PAT00288,S72,Fracture of Femur,Open,True
+DX00561,ADM00369,PAT00288,A09,Infectious Gastroenteritis,Moderate,False
+DX00562,ADM00370,PAT00289,D50,Iron Deficiency Anaemia,Severe,True
+DX00563,ADM00370,PAT00289,E11,Type 2 Diabetes Mellitus,Uncontrolled,False
+DX00564,ADM00371,PAT00290,N18,Chronic Kidney Disease,Stage 2,True
+DX00565,ADM00372,PAT00291,I21,Acute Myocardial Infarction,STEMI,True
+DX00566,ADM00373,PAT00291,G43,Migraine,Chronic,True
+DX00567,ADM00373,PAT00291,C34,Malignant Neoplasm of Lung,Stage III,False
+DX00568,ADM00374,PAT00291,D50,Iron Deficiency Anaemia,Moderate,True
+DX00569,ADM00374,PAT00291,S72,Fracture of Femur,Open,False
+DX00570,ADM00375,PAT00292,D50,Iron Deficiency Anaemia,Mild,True
+DX00571,ADM00375,PAT00292,C34,Malignant Neoplasm of Lung,Stage I,False
+DX00572,ADM00376,PAT00293,C50,Malignant Neoplasm of Breast,Stage I,True
+DX00573,ADM00376,PAT00293,J18,Pneumonia,Moderate,False
+DX00574,ADM00377,PAT00294,A09,Infectious Gastroenteritis,Mild,True
+DX00575,ADM00378,PAT00294,N18,Chronic Kidney Disease,Stage 1,True
+DX00576,ADM00378,PAT00294,J45,Asthma,Moderate,False
+DX00577,ADM00379,PAT00294,C34,Malignant Neoplasm of Lung,Stage I,True
+DX00578,ADM00380,PAT00295,C34,Malignant Neoplasm of Lung,Stage I,True
+DX00579,ADM00381,PAT00296,S72,Fracture of Femur,Open,True
+DX00580,ADM00382,PAT00296,G43,Migraine,Chronic,True
+DX00581,ADM00382,PAT00296,A09,Infectious Gastroenteritis,Moderate,False
+DX00582,ADM00383,PAT00296,A09,Infectious Gastroenteritis,Moderate,True
+DX00583,ADM00383,PAT00296,I10,Essential Hypertension,Mild,False
+DX00584,ADM00384,PAT00297,C50,Malignant Neoplasm of Breast,Stage II,True
+DX00585,ADM00385,PAT00298,C50,Malignant Neoplasm of Breast,Stage I,True
+DX00586,ADM00386,PAT00299,C34,Malignant Neoplasm of Lung,Stage III,True
+DX00587,ADM00387,PAT00299,S72,Fracture of Femur,Closed,True
+DX00588,ADM00388,PAT00299,N18,Chronic Kidney Disease,Stage 1,True
+DX00589,ADM00389,PAT00300,I21,Acute Myocardial Infarction,NSTEMI,True
+DX00590,ADM00390,PAT00301,J45,Asthma,Severe,True
+DX00591,ADM00390,PAT00301,C34,Malignant Neoplasm of Lung,Stage III,False
+DX00592,ADM00391,PAT00302,N18,Chronic Kidney Disease,Stage 3,True
+DX00593,ADM00392,PAT00302,C50,Malignant Neoplasm of Breast,Stage III,True
+DX00594,ADM00392,PAT00302,A09,Infectious Gastroenteritis,Moderate,False
+DX00595,ADM00393,PAT00303,C50,Malignant Neoplasm of Breast,Stage IV,True
+DX00596,ADM00394,PAT00304,G43,Migraine,Episodic,True
+DX00597,ADM00395,PAT00305,E11,Type 2 Diabetes Mellitus,Controlled,True
+DX00598,ADM00396,PAT00305,J45,Asthma,Moderate,True
+DX00599,ADM00396,PAT00305,J18,Pneumonia,Severe,False
+DX00600,ADM00397,PAT00306,A09,Infectious Gastroenteritis,Mild,True
+DX00601,ADM00398,PAT00307,A09,Infectious Gastroenteritis,Mild,True
+DX00602,ADM00399,PAT00308,D50,Iron Deficiency Anaemia,Moderate,True
+DX00603,ADM00400,PAT00309,A09,Infectious Gastroenteritis,Moderate,True
+DX00604,ADM00401,PAT00310,C34,Malignant Neoplasm of Lung,Stage I,True
+DX00605,ADM00402,PAT00310,C34,Malignant Neoplasm of Lung,Stage III,True
+DX00606,ADM00403,PAT00311,J18,Pneumonia,Severe,True
+DX00607,ADM00404,PAT00312,S72,Fracture of Femur,Closed,True
+DX00608,ADM00405,PAT00314,I21,Acute Myocardial Infarction,STEMI,True
+DX00609,ADM00405,PAT00314,E11,Type 2 Diabetes Mellitus,Controlled,False
+DX00610,ADM00406,PAT00316,N18,Chronic Kidney Disease,Stage 1,True
+DX00611,ADM00407,PAT00317,N18,Chronic Kidney Disease,Stage 1,True
+DX00612,ADM00408,PAT00318,G43,Migraine,Episodic,True
+DX00613,ADM00408,PAT00318,E11,Type 2 Diabetes Mellitus,Controlled,False
+DX00614,ADM00409,PAT00319,N18,Chronic Kidney Disease,Stage 4,True
+DX00615,ADM00409,PAT00319,C34,Malignant Neoplasm of Lung,Stage III,False
+DX00616,ADM00409,PAT00319,J45,Asthma,Mild,False
+DX00617,ADM00410,PAT00320,S72,Fracture of Femur,Closed,True
+DX00618,ADM00411,PAT00320,C50,Malignant Neoplasm of Breast,Stage IV,True
+DX00619,ADM00411,PAT00320,I10,Essential Hypertension,Moderate,False
+DX00620,ADM00412,PAT00321,A09,Infectious Gastroenteritis,Mild,True
+DX00621,ADM00412,PAT00321,I10,Essential Hypertension,Mild,False
+DX00622,ADM00413,PAT00322,S72,Fracture of Femur,Closed,True
+DX00623,ADM00414,PAT00322,S72,Fracture of Femur,Closed,True
+DX00624,ADM00415,PAT00323,A09,Infectious Gastroenteritis,Mild,True
+DX00625,ADM00416,PAT00323,J45,Asthma,Severe,True
+DX00626,ADM00417,PAT00325,I21,Acute Myocardial Infarction,NSTEMI,True
+DX00627,ADM00417,PAT00325,N18,Chronic Kidney Disease,Stage 4,False
+DX00628,ADM00418,PAT00326,J18,Pneumonia,Moderate,True
+DX00629,ADM00418,PAT00326,G43,Migraine,Chronic,False
+DX00630,ADM00418,PAT00326,I10,Essential Hypertension,Moderate,False
+DX00631,ADM00419,PAT00327,A09,Infectious Gastroenteritis,Moderate,True
+DX00632,ADM00420,PAT00327,J45,Asthma,Mild,True
+DX00633,ADM00420,PAT00327,J18,Pneumonia,Moderate,False
+DX00634,ADM00421,PAT00328,C50,Malignant Neoplasm of Breast,Stage I,True
+DX00635,ADM00422,PAT00329,C50,Malignant Neoplasm of Breast,Stage I,True
+DX00636,ADM00422,PAT00329,J18,Pneumonia,Mild,False
+DX00637,ADM00423,PAT00329,N18,Chronic Kidney Disease,Stage 1,True
+DX00638,ADM00423,PAT00329,J18,Pneumonia,Moderate,False
+DX00639,ADM00424,PAT00329,N18,Chronic Kidney Disease,Stage 1,True
+DX00640,ADM00425,PAT00331,G43,Migraine,Episodic,True
+DX00641,ADM00425,PAT00331,C50,Malignant Neoplasm of Breast,Stage III,False
+DX00642,ADM00426,PAT00332,E11,Type 2 Diabetes Mellitus,Uncontrolled,True
+DX00643,ADM00427,PAT00333,N18,Chronic Kidney Disease,Stage 3,True
+DX00644,ADM00427,PAT00333,J18,Pneumonia,Severe,False
+DX00645,ADM00428,PAT00334,D50,Iron Deficiency Anaemia,Moderate,True
+DX00646,ADM00428,PAT00334,I10,Essential Hypertension,Moderate,False
+DX00647,ADM00429,PAT00335,C34,Malignant Neoplasm of Lung,Stage I,True
+DX00648,ADM00429,PAT00335,J18,Pneumonia,Moderate,False
+DX00649,ADM00429,PAT00335,E11,Type 2 Diabetes Mellitus,Controlled,False
+DX00650,ADM00430,PAT00336,C50,Malignant Neoplasm of Breast,Stage I,True
+DX00651,ADM00431,PAT00338,J45,Asthma,Mild,True
+DX00652,ADM00431,PAT00338,E11,Type 2 Diabetes Mellitus,Controlled,False
+DX00653,ADM00432,PAT00339,G43,Migraine,Chronic,True
+DX00654,ADM00432,PAT00339,I10,Essential Hypertension,Severe,False
+DX00655,ADM00432,PAT00339,J18,Pneumonia,Moderate,False
+DX00656,ADM00433,PAT00340,N18,Chronic Kidney Disease,Stage 4,True
+DX00657,ADM00434,PAT00340,C34,Malignant Neoplasm of Lung,Stage I,True
+DX00658,ADM00434,PAT00340,A09,Infectious Gastroenteritis,Mild,False
+DX00659,ADM00435,PAT00341,C50,Malignant Neoplasm of Breast,Stage IV,True
+DX00660,ADM00436,PAT00341,C34,Malignant Neoplasm of Lung,Stage I,True
+DX00661,ADM00436,PAT00341,I10,Essential Hypertension,Mild,False
+DX00662,ADM00437,PAT00342,D50,Iron Deficiency Anaemia,Moderate,True
+DX00663,ADM00437,PAT00342,N18,Chronic Kidney Disease,Stage 3,False
+DX00664,ADM00438,PAT00342,D50,Iron Deficiency Anaemia,Moderate,True
+DX00665,ADM00439,PAT00342,C50,Malignant Neoplasm of Breast,Stage III,True
+DX00666,ADM00440,PAT00344,J18,Pneumonia,Moderate,True
+DX00667,ADM00441,PAT00345,I21,Acute Myocardial Infarction,STEMI,True
+DX00668,ADM00441,PAT00345,D50,Iron Deficiency Anaemia,Mild,False
+DX00669,ADM00442,PAT00345,S72,Fracture of Femur,Open,True
+DX00670,ADM00443,PAT00345,C50,Malignant Neoplasm of Breast,Stage II,True
+DX00671,ADM00444,PAT00346,G43,Migraine,Chronic,True
+DX00672,ADM00444,PAT00346,A09,Infectious Gastroenteritis,Moderate,False
+DX00673,ADM00445,PAT00347,S72,Fracture of Femur,Closed,True
+DX00674,ADM00446,PAT00348,J18,Pneumonia,Severe,True
+DX00675,ADM00446,PAT00348,E11,Type 2 Diabetes Mellitus,Uncontrolled,False
+DX00676,ADM00447,PAT00349,J45,Asthma,Mild,True
+DX00677,ADM00447,PAT00349,J18,Pneumonia,Severe,False
+DX00678,ADM00447,PAT00349,I10,Essential Hypertension,Mild,False
+DX00679,ADM00448,PAT00350,G43,Migraine,Chronic,True
+DX00680,ADM00449,PAT00351,J18,Pneumonia,Mild,True
+DX00681,ADM00449,PAT00351,J45,Asthma,Moderate,False
+DX00682,ADM00450,PAT00351,J45,Asthma,Moderate,True
+DX00683,ADM00451,PAT00352,G43,Migraine,Chronic,True
+DX00684,ADM00452,PAT00354,A09,Infectious Gastroenteritis,Moderate,True
+DX00685,ADM00453,PAT00355,I10,Essential Hypertension,Mild,True
+DX00686,ADM00453,PAT00355,C50,Malignant Neoplasm of Breast,Stage III,False
+DX00687,ADM00454,PAT00356,I21,Acute Myocardial Infarction,NSTEMI,True
+DX00688,ADM00455,PAT00356,I21,Acute Myocardial Infarction,STEMI,True
+DX00689,ADM00455,PAT00356,S72,Fracture of Femur,Open,False
+DX00690,ADM00456,PAT00357,A09,Infectious Gastroenteritis,Moderate,True
+DX00691,ADM00456,PAT00357,G43,Migraine,Episodic,False
+DX00692,ADM00457,PAT00358,C50,Malignant Neoplasm of Breast,Stage I,True
+DX00693,ADM00457,PAT00358,D50,Iron Deficiency Anaemia,Moderate,False
+DX00694,ADM00457,PAT00358,A09,Infectious Gastroenteritis,Mild,False
+DX00695,ADM00458,PAT00358,G43,Migraine,Episodic,True
+DX00696,ADM00459,PAT00358,S72,Fracture of Femur,Closed,True
+DX00697,ADM00459,PAT00358,E11,Type 2 Diabetes Mellitus,Uncontrolled,False
+DX00698,ADM00459,PAT00358,C34,Malignant Neoplasm of Lung,Stage III,False
+DX00699,ADM00460,PAT00359,N18,Chronic Kidney Disease,Stage 3,True
+DX00700,ADM00461,PAT00360,E11,Type 2 Diabetes Mellitus,Uncontrolled,True
+DX00701,ADM00461,PAT00360,J18,Pneumonia,Moderate,False
+DX00702,ADM00462,PAT00361,I21,Acute Myocardial Infarction,NSTEMI,True
+DX00703,ADM00462,PAT00361,I10,Essential Hypertension,Severe,False
+DX00704,ADM00463,PAT00362,C50,Malignant Neoplasm of Breast,Stage IV,True
+DX00705,ADM00464,PAT00363,J45,Asthma,Mild,True
+DX00706,ADM00465,PAT00363,J45,Asthma,Mild,True
+DX00707,ADM00466,PAT00364,D50,Iron Deficiency Anaemia,Severe,True
+DX00708,ADM00467,PAT00365,J18,Pneumonia,Mild,True
+DX00709,ADM00467,PAT00365,J45,Asthma,Mild,False
+DX00710,ADM00468,PAT00366,N18,Chronic Kidney Disease,Stage 3,True
+DX00711,ADM00469,PAT00366,J45,Asthma,Severe,True
+DX00712,ADM00469,PAT00366,I10,Essential Hypertension,Severe,False
+DX00713,ADM00469,PAT00366,A09,Infectious Gastroenteritis,Moderate,False
+DX00714,ADM00470,PAT00367,S72,Fracture of Femur,Closed,True
+DX00715,ADM00470,PAT00367,E11,Type 2 Diabetes Mellitus,Uncontrolled,False
+DX00716,ADM00471,PAT00367,C50,Malignant Neoplasm of Breast,Stage I,True
+DX00717,ADM00472,PAT00368,I21,Acute Myocardial Infarction,NSTEMI,True
+DX00718,ADM00473,PAT00368,E11,Type 2 Diabetes Mellitus,Controlled,True
+DX00719,ADM00474,PAT00370,G43,Migraine,Chronic,True
+DX00720,ADM00475,PAT00371,D50,Iron Deficiency Anaemia,Mild,True
+DX00721,ADM00475,PAT00371,S72,Fracture of Femur,Closed,False
+DX00722,ADM00475,PAT00371,I10,Essential Hypertension,Mild,False
+DX00723,ADM00476,PAT00372,J18,Pneumonia,Severe,True
+DX00724,ADM00476,PAT00372,D50,Iron Deficiency Anaemia,Severe,False
+DX00725,ADM00477,PAT00372,E11,Type 2 Diabetes Mellitus,Controlled,True
+DX00726,ADM00478,PAT00373,I21,Acute Myocardial Infarction,STEMI,True
+DX00727,ADM00478,PAT00373,C34,Malignant Neoplasm of Lung,Stage II,False
+DX00728,ADM00479,PAT00373,A09,Infectious Gastroenteritis,Mild,True
+DX00729,ADM00480,PAT00373,C50,Malignant Neoplasm of Breast,Stage I,True
+DX00730,ADM00481,PAT00374,N18,Chronic Kidney Disease,Stage 3,True
+DX00731,ADM00482,PAT00374,I21,Acute Myocardial Infarction,STEMI,True
+DX00732,ADM00483,PAT00374,I10,Essential Hypertension,Severe,True
+DX00733,ADM00484,PAT00375,J18,Pneumonia,Moderate,True
+DX00734,ADM00485,PAT00376,D50,Iron Deficiency Anaemia,Moderate,True
+DX00735,ADM00486,PAT00377,I21,Acute Myocardial Infarction,NSTEMI,True
+DX00736,ADM00486,PAT00377,D50,Iron Deficiency Anaemia,Mild,False
+DX00737,ADM00486,PAT00377,S72,Fracture of Femur,Closed,False
+DX00738,ADM00487,PAT00378,J18,Pneumonia,Moderate,True
+DX00739,ADM00488,PAT00379,I21,Acute Myocardial Infarction,STEMI,True
+DX00740,ADM00488,PAT00379,J18,Pneumonia,Severe,False
+DX00741,ADM00489,PAT00380,G43,Migraine,Chronic,True
+DX00742,ADM00490,PAT00381,N18,Chronic Kidney Disease,Stage 3,True
+DX00743,ADM00490,PAT00381,G43,Migraine,Episodic,False
+DX00744,ADM00491,PAT00382,C50,Malignant Neoplasm of Breast,Stage IV,True
+DX00745,ADM00491,PAT00382,N18,Chronic Kidney Disease,Stage 4,False
+DX00746,ADM00492,PAT00385,D50,Iron Deficiency Anaemia,Moderate,True
+DX00747,ADM00492,PAT00385,E11,Type 2 Diabetes Mellitus,Controlled,False
+DX00748,ADM00493,PAT00386,C34,Malignant Neoplasm of Lung,Stage II,True
+DX00749,ADM00494,PAT00387,S72,Fracture of Femur,Open,True
+DX00750,ADM00495,PAT00388,J45,Asthma,Severe,True
+DX00751,ADM00496,PAT00388,D50,Iron Deficiency Anaemia,Severe,True
+DX00752,ADM00496,PAT00388,J45,Asthma,Moderate,False
+DX00753,ADM00496,PAT00388,N18,Chronic Kidney Disease,Stage 4,False
+DX00754,ADM00497,PAT00390,C34,Malignant Neoplasm of Lung,Stage III,True
+DX00755,ADM00498,PAT00390,I10,Essential Hypertension,Moderate,True
+DX00756,ADM00499,PAT00391,J18,Pneumonia,Mild,True
+DX00757,ADM00500,PAT00393,G43,Migraine,Chronic,True
+DX00758,ADM00501,PAT00393,J45,Asthma,Severe,True
+DX00759,ADM00502,PAT00394,N18,Chronic Kidney Disease,Stage 4,True
+DX00760,ADM00503,PAT00395,J18,Pneumonia,Mild,True
+DX00761,ADM00504,PAT00396,E11,Type 2 Diabetes Mellitus,Uncontrolled,True
+DX00762,ADM00505,PAT00397,A09,Infectious Gastroenteritis,Moderate,True
+DX00763,ADM00505,PAT00397,C50,Malignant Neoplasm of Breast,Stage III,False
+DX00764,ADM00506,PAT00398,S72,Fracture of Femur,Closed,True
+DX00765,ADM00507,PAT00398,A09,Infectious Gastroenteritis,Moderate,True
+DX00766,ADM00508,PAT00399,C50,Malignant Neoplasm of Breast,Stage IV,True
+DX00767,ADM00509,PAT00400,I21,Acute Myocardial Infarction,STEMI,True
+DX00768,ADM00509,PAT00400,E11,Type 2 Diabetes Mellitus,Controlled,False
+DX00769,ADM00510,PAT00402,G43,Migraine,Episodic,True
+DX00770,ADM00510,PAT00402,C34,Malignant Neoplasm of Lung,Stage I,False
+DX00771,ADM00511,PAT00402,J45,Asthma,Severe,True
+DX00772,ADM00512,PAT00403,J18,Pneumonia,Mild,True
+DX00773,ADM00513,PAT00404,A09,Infectious Gastroenteritis,Mild,True
+DX00774,ADM00514,PAT00406,E11,Type 2 Diabetes Mellitus,Uncontrolled,True
+DX00775,ADM00515,PAT00407,C50,Malignant Neoplasm of Breast,Stage IV,True
+DX00776,ADM00516,PAT00407,E11,Type 2 Diabetes Mellitus,Controlled,True
+DX00777,ADM00517,PAT00408,C34,Malignant Neoplasm of Lung,Stage I,True
+DX00778,ADM00518,PAT00409,E11,Type 2 Diabetes Mellitus,Controlled,True
+DX00779,ADM00519,PAT00409,I21,Acute Myocardial Infarction,NSTEMI,True
+DX00780,ADM00519,PAT00409,N18,Chronic Kidney Disease,Stage 4,False
+DX00781,ADM00520,PAT00410,G43,Migraine,Chronic,True
+DX00782,ADM00521,PAT00410,I21,Acute Myocardial Infarction,STEMI,True
+DX00783,ADM00521,PAT00410,N18,Chronic Kidney Disease,Stage 2,False
+DX00784,ADM00522,PAT00411,A09,Infectious Gastroenteritis,Mild,True
+DX00785,ADM00522,PAT00411,N18,Chronic Kidney Disease,Stage 2,False
+DX00786,ADM00523,PAT00412,J45,Asthma,Moderate,True
+DX00787,ADM00523,PAT00412,E11,Type 2 Diabetes Mellitus,Controlled,False
+DX00788,ADM00523,PAT00412,G43,Migraine,Episodic,False
+DX00789,ADM00524,PAT00414,I10,Essential Hypertension,Mild,True
+DX00790,ADM00525,PAT00415,I10,Essential Hypertension,Mild,True
+DX00791,ADM00526,PAT00416,I21,Acute Myocardial Infarction,STEMI,True
+DX00792,ADM00526,PAT00416,G43,Migraine,Chronic,False
+DX00793,ADM00526,PAT00416,N18,Chronic Kidney Disease,Stage 2,False
+DX00794,ADM00527,PAT00417,J45,Asthma,Mild,True
+DX00795,ADM00528,PAT00418,S72,Fracture of Femur,Closed,True
+DX00796,ADM00529,PAT00420,C50,Malignant Neoplasm of Breast,Stage I,True
+DX00797,ADM00530,PAT00420,E11,Type 2 Diabetes Mellitus,Uncontrolled,True
+DX00798,ADM00531,PAT00420,A09,Infectious Gastroenteritis,Mild,True
+DX00799,ADM00532,PAT00421,I21,Acute Myocardial Infarction,NSTEMI,True
+DX00800,ADM00533,PAT00422,J18,Pneumonia,Mild,True
+DX00801,ADM00533,PAT00422,C34,Malignant Neoplasm of Lung,Stage I,False
+DX00802,ADM00534,PAT00423,S72,Fracture of Femur,Open,True
+DX00803,ADM00535,PAT00424,G43,Migraine,Episodic,True
+DX00804,ADM00536,PAT00425,A09,Infectious Gastroenteritis,Mild,True
+DX00805,ADM00536,PAT00425,S72,Fracture of Femur,Closed,False
+DX00806,ADM00537,PAT00426,I21,Acute Myocardial Infarction,STEMI,True
+DX00807,ADM00538,PAT00427,E11,Type 2 Diabetes Mellitus,Controlled,True
+DX00808,ADM00538,PAT00427,N18,Chronic Kidney Disease,Stage 1,False
+DX00809,ADM00539,PAT00428,J18,Pneumonia,Moderate,True
+DX00810,ADM00540,PAT00429,J18,Pneumonia,Mild,True
+DX00811,ADM00541,PAT00429,J18,Pneumonia,Mild,True
+DX00812,ADM00542,PAT00430,G43,Migraine,Chronic,True
+DX00813,ADM00542,PAT00430,S72,Fracture of Femur,Closed,False
+DX00814,ADM00543,PAT00430,S72,Fracture of Femur,Open,True
+DX00815,ADM00543,PAT00430,J18,Pneumonia,Moderate,False
+DX00816,ADM00544,PAT00431,I21,Acute Myocardial Infarction,NSTEMI,True
+DX00817,ADM00544,PAT00431,N18,Chronic Kidney Disease,Stage 3,False
+DX00818,ADM00545,PAT00432,D50,Iron Deficiency Anaemia,Mild,True
+DX00819,ADM00546,PAT00433,D50,Iron Deficiency Anaemia,Moderate,True
+DX00820,ADM00547,PAT00434,I21,Acute Myocardial Infarction,STEMI,True
+DX00821,ADM00547,PAT00434,I10,Essential Hypertension,Moderate,False
+DX00822,ADM00548,PAT00434,I21,Acute Myocardial Infarction,NSTEMI,True
+DX00823,ADM00549,PAT00435,S72,Fracture of Femur,Closed,True
+DX00824,ADM00550,PAT00435,A09,Infectious Gastroenteritis,Mild,True
+DX00825,ADM00550,PAT00435,G43,Migraine,Chronic,False
+DX00826,ADM00551,PAT00435,N18,Chronic Kidney Disease,Stage 4,True
+DX00827,ADM00551,PAT00435,J45,Asthma,Severe,False
+DX00828,ADM00552,PAT00436,J18,Pneumonia,Severe,True
+DX00829,ADM00552,PAT00436,D50,Iron Deficiency Anaemia,Severe,False
+DX00830,ADM00552,PAT00436,A09,Infectious Gastroenteritis,Moderate,False
+DX00831,ADM00553,PAT00436,C50,Malignant Neoplasm of Breast,Stage II,True
+DX00832,ADM00554,PAT00436,E11,Type 2 Diabetes Mellitus,Uncontrolled,True
+DX00833,ADM00555,PAT00437,I21,Acute Myocardial Infarction,NSTEMI,True
+DX00834,ADM00555,PAT00437,J45,Asthma,Moderate,False
+DX00835,ADM00556,PAT00437,E11,Type 2 Diabetes Mellitus,Uncontrolled,True
+DX00836,ADM00557,PAT00439,I21,Acute Myocardial Infarction,STEMI,True
+DX00837,ADM00558,PAT00440,J18,Pneumonia,Severe,True
+DX00838,ADM00559,PAT00441,A09,Infectious Gastroenteritis,Moderate,True
+DX00839,ADM00560,PAT00441,E11,Type 2 Diabetes Mellitus,Uncontrolled,True
+DX00840,ADM00561,PAT00442,G43,Migraine,Episodic,True
+DX00841,ADM00562,PAT00443,A09,Infectious Gastroenteritis,Moderate,True
+DX00842,ADM00563,PAT00444,C50,Malignant Neoplasm of Breast,Stage III,True
+DX00843,ADM00564,PAT00444,I21,Acute Myocardial Infarction,STEMI,True
+DX00844,ADM00564,PAT00444,J45,Asthma,Moderate,False
+DX00845,ADM00564,PAT00444,G43,Migraine,Episodic,False
+DX00846,ADM00565,PAT00444,J45,Asthma,Severe,True
+DX00847,ADM00566,PAT00445,I21,Acute Myocardial Infarction,NSTEMI,True
+DX00848,ADM00566,PAT00445,S72,Fracture of Femur,Closed,False
+DX00849,ADM00567,PAT00445,J18,Pneumonia,Severe,True
+DX00850,ADM00568,PAT00446,I21,Acute Myocardial Infarction,STEMI,True
+DX00851,ADM00568,PAT00446,C50,Malignant Neoplasm of Breast,Stage III,False
+DX00852,ADM00569,PAT00447,C50,Malignant Neoplasm of Breast,Stage I,True
+DX00853,ADM00570,PAT00448,C50,Malignant Neoplasm of Breast,Stage IV,True
+DX00854,ADM00571,PAT00449,J45,Asthma,Mild,True
+DX00855,ADM00571,PAT00449,N18,Chronic Kidney Disease,Stage 3,False
+DX00856,ADM00571,PAT00449,C34,Malignant Neoplasm of Lung,Stage II,False
+DX00857,ADM00572,PAT00450,N18,Chronic Kidney Disease,Stage 3,True
+DX00858,ADM00573,PAT00451,G43,Migraine,Chronic,True
+DX00859,ADM00574,PAT00452,A09,Infectious Gastroenteritis,Mild,True
+DX00860,ADM00575,PAT00452,E11,Type 2 Diabetes Mellitus,Uncontrolled,True
+DX00861,ADM00576,PAT00453,S72,Fracture of Femur,Open,True
+DX00862,ADM00576,PAT00453,D50,Iron Deficiency Anaemia,Severe,False
+DX00863,ADM00577,PAT00453,A09,Infectious Gastroenteritis,Mild,True
+DX00864,ADM00577,PAT00453,J45,Asthma,Moderate,False
+DX00865,ADM00578,PAT00454,J18,Pneumonia,Severe,True
+DX00866,ADM00579,PAT00454,E11,Type 2 Diabetes Mellitus,Controlled,True
+DX00867,ADM00579,PAT00454,J45,Asthma,Severe,False
+DX00868,ADM00579,PAT00454,I21,Acute Myocardial Infarction,NSTEMI,False
+DX00869,ADM00580,PAT00455,J18,Pneumonia,Mild,True
+DX00870,ADM00581,PAT00455,J18,Pneumonia,Moderate,True
+DX00871,ADM00582,PAT00458,I10,Essential Hypertension,Moderate,True
+DX00872,ADM00583,PAT00459,I10,Essential Hypertension,Moderate,True
+DX00873,ADM00583,PAT00459,E11,Type 2 Diabetes Mellitus,Uncontrolled,False
+DX00874,ADM00584,PAT00461,C34,Malignant Neoplasm of Lung,Stage III,True
+DX00875,ADM00584,PAT00461,I10,Essential Hypertension,Mild,False
+DX00876,ADM00585,PAT00462,D50,Iron Deficiency Anaemia,Severe,True
+DX00877,ADM00586,PAT00463,S72,Fracture of Femur,Closed,True
+DX00878,ADM00587,PAT00464,I21,Acute Myocardial Infarction,NSTEMI,True
+DX00879,ADM00587,PAT00464,J18,Pneumonia,Moderate,False
+DX00880,ADM00587,PAT00464,A09,Infectious Gastroenteritis,Moderate,False
+DX00881,ADM00588,PAT00464,N18,Chronic Kidney Disease,Stage 3,True
+DX00882,ADM00589,PAT00465,J45,Asthma,Severe,True
+DX00883,ADM00589,PAT00465,A09,Infectious Gastroenteritis,Mild,False
+DX00884,ADM00590,PAT00466,J45,Asthma,Moderate,True
+DX00885,ADM00591,PAT00467,I21,Acute Myocardial Infarction,STEMI,True
+DX00886,ADM00592,PAT00468,J18,Pneumonia,Moderate,True
+DX00887,ADM00592,PAT00468,A09,Infectious Gastroenteritis,Mild,False
+DX00888,ADM00592,PAT00468,E11,Type 2 Diabetes Mellitus,Uncontrolled,False
+DX00889,ADM00593,PAT00468,I21,Acute Myocardial Infarction,NSTEMI,True
+DX00890,ADM00594,PAT00468,N18,Chronic Kidney Disease,Stage 1,True
+DX00891,ADM00595,PAT00469,E11,Type 2 Diabetes Mellitus,Uncontrolled,True
+DX00892,ADM00595,PAT00469,S72,Fracture of Femur,Open,False
+DX00893,ADM00595,PAT00469,I21,Acute Myocardial Infarction,NSTEMI,False
+DX00894,ADM00596,PAT00469,I21,Acute Myocardial Infarction,NSTEMI,True
+DX00895,ADM00597,PAT00470,I10,Essential Hypertension,Mild,True
+DX00896,ADM00597,PAT00470,I21,Acute Myocardial Infarction,STEMI,False
+DX00897,ADM00597,PAT00470,C34,Malignant Neoplasm of Lung,Stage II,False
+DX00898,ADM00598,PAT00471,E11,Type 2 Diabetes Mellitus,Controlled,True
+DX00899,ADM00599,PAT00472,I21,Acute Myocardial Infarction,STEMI,True
+DX00900,ADM00600,PAT00473,A09,Infectious Gastroenteritis,Mild,True
+DX00901,ADM00601,PAT00474,J45,Asthma,Mild,True
+DX00902,ADM00602,PAT00474,D50,Iron Deficiency Anaemia,Severe,True
+DX00903,ADM00603,PAT00475,E11,Type 2 Diabetes Mellitus,Controlled,True
+DX00904,ADM00604,PAT00476,D50,Iron Deficiency Anaemia,Moderate,True
+DX00905,ADM00605,PAT00477,N18,Chronic Kidney Disease,Stage 4,True
+DX00906,ADM00606,PAT00478,N18,Chronic Kidney Disease,Stage 3,True
+DX00907,ADM00606,PAT00478,J18,Pneumonia,Severe,False
+DX00908,ADM00607,PAT00479,D50,Iron Deficiency Anaemia,Severe,True
+DX00909,ADM00607,PAT00479,I10,Essential Hypertension,Severe,False
+DX00910,ADM00608,PAT00480,D50,Iron Deficiency Anaemia,Severe,True
+DX00911,ADM00608,PAT00480,E11,Type 2 Diabetes Mellitus,Controlled,False
+DX00912,ADM00609,PAT00480,I21,Acute Myocardial Infarction,STEMI,True
+DX00913,ADM00609,PAT00480,C50,Malignant Neoplasm of Breast,Stage I,False
+DX00914,ADM00609,PAT00480,A09,Infectious Gastroenteritis,Mild,False
+DX00915,ADM00610,PAT00482,C34,Malignant Neoplasm of Lung,Stage II,True
+DX00916,ADM00610,PAT00482,E11,Type 2 Diabetes Mellitus,Controlled,False
+DX00917,ADM00610,PAT00482,N18,Chronic Kidney Disease,Stage 3,False
+DX00918,ADM00611,PAT00482,J45,Asthma,Severe,True
+DX00919,ADM00612,PAT00483,E11,Type 2 Diabetes Mellitus,Controlled,True
+DX00920,ADM00612,PAT00483,I10,Essential Hypertension,Moderate,False
+DX00921,ADM00613,PAT00484,S72,Fracture of Femur,Closed,True
+DX00922,ADM00613,PAT00484,I10,Essential Hypertension,Severe,False
+DX00923,ADM00614,PAT00485,I21,Acute Myocardial Infarction,NSTEMI,True
+DX00924,ADM00615,PAT00486,I21,Acute Myocardial Infarction,STEMI,True
+DX00925,ADM00615,PAT00486,C34,Malignant Neoplasm of Lung,Stage III,False
+DX00926,ADM00615,PAT00486,I10,Essential Hypertension,Severe,False
+DX00927,ADM00616,PAT00487,D50,Iron Deficiency Anaemia,Mild,True
+DX00928,ADM00617,PAT00488,J18,Pneumonia,Moderate,True
+DX00929,ADM00618,PAT00488,J45,Asthma,Moderate,True
+DX00930,ADM00619,PAT00489,D50,Iron Deficiency Anaemia,Mild,True
+DX00931,ADM00620,PAT00489,J18,Pneumonia,Mild,True
+DX00932,ADM00620,PAT00489,G43,Migraine,Chronic,False
+DX00933,ADM00620,PAT00489,J45,Asthma,Mild,False
+DX00934,ADM00621,PAT00490,A09,Infectious Gastroenteritis,Mild,True
+DX00935,ADM00621,PAT00490,N18,Chronic Kidney Disease,Stage 4,False
+DX00936,ADM00622,PAT00490,A09,Infectious Gastroenteritis,Mild,True
+DX00937,ADM00622,PAT00490,E11,Type 2 Diabetes Mellitus,Uncontrolled,False
+DX00938,ADM00623,PAT00491,G43,Migraine,Chronic,True
+DX00939,ADM00624,PAT00491,J45,Asthma,Mild,True
+DX00940,ADM00625,PAT00492,E11,Type 2 Diabetes Mellitus,Controlled,True
+DX00941,ADM00625,PAT00492,J18,Pneumonia,Severe,False
+DX00942,ADM00626,PAT00493,N18,Chronic Kidney Disease,Stage 3,True
+DX00943,ADM00627,PAT00493,I10,Essential Hypertension,Moderate,True
+DX00944,ADM00627,PAT00493,S72,Fracture of Femur,Closed,False
+DX00945,ADM00627,PAT00493,D50,Iron Deficiency Anaemia,Mild,False
+DX00946,ADM00628,PAT00493,C34,Malignant Neoplasm of Lung,Stage II,True
+DX00947,ADM00628,PAT00493,J45,Asthma,Mild,False
+DX00948,ADM00628,PAT00493,E11,Type 2 Diabetes Mellitus,Controlled,False
+DX00949,ADM00629,PAT00494,C34,Malignant Neoplasm of Lung,Stage II,True
+DX00950,ADM00630,PAT00494,D50,Iron Deficiency Anaemia,Mild,True
+DX00951,ADM00630,PAT00494,G43,Migraine,Chronic,False
+DX00952,ADM00631,PAT00497,E11,Type 2 Diabetes Mellitus,Uncontrolled,True
+DX00953,ADM00631,PAT00497,A09,Infectious Gastroenteritis,Moderate,False
+DX00954,ADM00631,PAT00497,J18,Pneumonia,Severe,False
+DX00955,ADM00632,PAT00497,I21,Acute Myocardial Infarction,NSTEMI,True
+DX00956,ADM00633,PAT00500,J18,Pneumonia,Mild,True
+DX00957,ADM00633,PAT00500,A09,Infectious Gastroenteritis,Mild,False
